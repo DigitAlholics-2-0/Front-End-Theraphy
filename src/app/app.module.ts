@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import {HeaderComponent} from "./components/header/header.component";
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
@@ -34,6 +36,9 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ScheduleAppointmentsComponent } from './user-type/patient/pages/schedule-appointments/schedule-appointments.component';
 import { PaymentsComponent } from './user-type/patient/pages/payments/payments.component';
 import { MedicalAppointmentsComponent } from './user-type/patient/pages/medical-appointments/medical-appointments.component';
+import {
+  ProfessionalProfileComponent
+} from "./user-type/patient/pages/professional-profile/professional-profile.component";
 
 @NgModule({
   declarations: [
@@ -44,7 +49,9 @@ import { MedicalAppointmentsComponent } from './user-type/patient/pages/medical-
     SidenavComponent,
     ScheduleAppointmentsComponent,
     PaymentsComponent,
-    MedicalAppointmentsComponent
+    MedicalAppointmentsComponent,
+    HeaderComponent,
+    ProfessionalProfileComponent
   ],
   imports: [
     BrowserModule,
