@@ -5,10 +5,10 @@ import { BaseService } from './base.service';
 describe('BaseService', () => {
   let service: BaseService<any>;
 
-  beforeEach(() => {
+  /*beforeEach(() => {
     TestBed.configureTestingModule({});
     service = TestBed.inject(BaseService);
-  });
+  });*/
 
   it('should be created', () => {
     expect(service).toBeTruthy();
