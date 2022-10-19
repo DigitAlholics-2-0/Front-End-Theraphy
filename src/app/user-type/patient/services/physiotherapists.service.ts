@@ -9,10 +9,10 @@ import {Observable} from "rxjs";
 })
 export class PhysiotherapistsService extends BaseService<Physiotherapist>{
 
-  endPoint = '/physiotherapists'
+  //endPoint = 'http://localhost:3000/api/v1/physiotherapists'
 
   constructor(http:HttpClient) {
     super(http);
-    this.basePath += this.endPoint;
+    this.basePath = 'http://localhost:3000/api/v1/physiotherapists'; // this.endPoint;
   }
 }

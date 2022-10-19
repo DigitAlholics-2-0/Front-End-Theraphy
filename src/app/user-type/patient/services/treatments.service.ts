@@ -10,11 +10,11 @@ import {Observable} from "rxjs";
 
 export class TreatmentsService extends BaseService<Treatment>{
 
-  endPoint = '/treatments';
+  //endPoint = '/treatments';
 
   constructor(http: HttpClient) {
     super(http);
-    this.basePath += this.endPoint;
+    this.basePath = 'http://localhost:3000/api/v1/treatments'; //this.endPoint;
   }
 
 
