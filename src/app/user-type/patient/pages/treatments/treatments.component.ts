@@ -15,8 +15,6 @@ export class TreatmentsComponent implements OnInit {
 
   treatments: Treatment[]=[];
 
-
-
   constructor(private treatmentsService: TreatmentsService, private route: ActivatedRoute, private router: Router) {
   }
 

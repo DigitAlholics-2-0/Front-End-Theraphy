@@ -1,6 +1,6 @@
 export const sidenavMenuData = [
   {
-    routeLink: 'home-patient',
+    routeLink: 'home',
     icon: 'home',
     label: 'Home'
   },
@@ -25,12 +25,12 @@ export const sidenavMenuData = [
     label: 'Appointments'
   },
   {
-    routeLink: 'my-treatments',
+    routeLink: 'myTreatments',
     icon: 'accessibility',
     label: 'My Treatments'
   },
   {
-    routeLink: 'my-physiotherapists',
+    routeLink: 'myPhysiotherapists',
     icon: 'group',
     label: 'My Physiotherapists'
   }
