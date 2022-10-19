@@ -3,7 +3,7 @@ export interface Treatment {
   title: string;
   description: string;
   sessionsQuantity: number;
-  physiotherapistId: number;
+  physiotherapist_id: number;
   photo: string;
   videoSessions: string[]
 }
