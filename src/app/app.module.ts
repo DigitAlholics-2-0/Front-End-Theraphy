@@ -39,6 +39,7 @@ import {
   ProfessionalProfileComponent
 } from "./user-type/patient/pages/professional-profile/professional-profile.component";
 import {HeaderComponent} from "./components/header/header.component";
+import {AppointmentsService} from "./user-type/patient/services/appointments.service";
 
 @NgModule({
   declarations: [
@@ -81,7 +82,7 @@ import {HeaderComponent} from "./components/header/header.component";
     MatNativeDateModule,
     MatSelectModule
   ],
-  providers: [TreatmentsService,PhysiotherapistsService],
+  providers: [TreatmentsService,PhysiotherapistsService, AppointmentsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

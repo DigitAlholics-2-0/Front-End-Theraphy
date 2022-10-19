@@ -3,7 +3,7 @@ import {catchError, Observable, retry, throwError} from "rxjs";
 
 export class BaseService<T> {
   // Resource Endpoint
-  basePath = 'https://my-json-server.typicode.com/DiegoDa04/FakeAPI-server';
+  basePath = 'http://localhost:3000/api/v1/resources';
 
   // Common options
   httpOptions = {
