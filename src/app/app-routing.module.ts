@@ -12,6 +12,10 @@ import {
   ProfessionalProfileComponent
 } from "./user-type/patient/pages/professional-profile/professional-profile.component";
 import {TreatmentsInfoComponent} from "./user-type/patient/pages/treatments-info/treatments-info.component";
+import {HomeComponent} from "./user-type/patient/pages/home/home.component";
+import {Home2Component} from "./user-type/doctor/pages/home2/home2.component";
+import {LoginComponent} from "./shared/pages/login/login.component";
+import {SignupComponent} from "./shared/pages/signup/signup.component";
 
 const routes: Routes = [
   {path:'physiotherapists', component: PhysiotherapistsComponent},
@@ -21,7 +25,11 @@ const routes: Routes = [
   {path:'schedule-appointments', component: ScheduleAppointmentsComponent},
   {path: 'medical-appointments', component: MedicalAppointmentsComponent},
   {path: 'video-sessions/:id', component: VideoSessionsComponent},
-  {path: 'professional-profile/:id', component: ProfessionalProfileComponent}
+  {path: 'professional-profile/:id', component: ProfessionalProfileComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'home2', component: Home2Component},
+  {path: 'login', component: LoginComponent},
+  {path: 'signup', component: SignupComponent}
 ];
 
 @NgModule({

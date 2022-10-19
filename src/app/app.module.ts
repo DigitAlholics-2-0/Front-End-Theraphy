@@ -39,6 +39,11 @@ import {
   ProfessionalProfileComponent
 } from "./user-type/patient/pages/professional-profile/professional-profile.component";
 import {HeaderComponent} from "./components/header/header.component";
+import { HomeComponent } from './user-type/patient/pages/home/home.component';
+import {MatProgressBarModule} from "@angular/material/progress-bar";
+import { Home2Component } from './user-type/doctor/pages/home2/home2.component';
+import { LoginComponent } from './shared/pages/login/login.component';
+import { SignupComponent } from './shared/pages/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -52,35 +57,40 @@ import {HeaderComponent} from "./components/header/header.component";
     MedicalAppointmentsComponent,
     TreatmentsInfoComponent,
     ProfessionalProfileComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    Home2Component,
+    LoginComponent,
+    SignupComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatInputModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatSortModule,
-    MatCardModule,
-    MatGridListModule,
-    MatDividerModule,
-    MatSidenavModule,
-    MatListModule,
-    MatTooltipModule,
-    MatBadgeModule,
-    MatCheckboxModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatSelectModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatInputModule,
+        MatButtonModule,
+        MatFormFieldModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatSortModule,
+        MatCardModule,
+        MatGridListModule,
+        MatDividerModule,
+        MatSidenavModule,
+        MatListModule,
+        MatTooltipModule,
+        MatBadgeModule,
+        MatCheckboxModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatSelectModule,
+        MatProgressBarModule
+    ],
   providers: [TreatmentsService,PhysiotherapistsService],
   bootstrap: [AppComponent]
 })

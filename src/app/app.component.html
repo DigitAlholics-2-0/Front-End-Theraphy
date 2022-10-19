@@ -1,9 +1,9 @@
 <div class="page">
-  <div class="sidenav">
+  <div class="sidenav" *ngIf="!submitted">
     <app-sidenav></app-sidenav>
   </div>
   <div class="contents">
-    <app-header></app-header>
+    <app-header *ngIf="!submitted"></app-header>
     <div><router-outlet></router-outlet></div>
   </div>
 </div>
