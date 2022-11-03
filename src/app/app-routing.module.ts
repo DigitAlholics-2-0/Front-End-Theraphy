@@ -23,6 +23,7 @@ import {HomePatientComponent} from "./user-type/patient/pages/home-patient/home-
 import {HomeDoctorComponent} from "./user-type/doctor/pages/home-doctor/home-doctor.component";
 import {SignupComponent} from "./shared/pages/signup/signup.component";
 import {LoginComponent} from "./shared/pages/login/login.component";
+import {MyTreatmentsComponent} from "./user-type/doctor/pages/my-treatments/my-treatments.component";
 
 const routes: Routes = [
   {path: 'profile', component: ProfileComponent},
@@ -43,7 +44,11 @@ const routes: Routes = [
   {path: 'home-patient', component: HomePatientComponent},
   {path: 'home-doctor', component: HomeDoctorComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'signup', component: SignupComponent}
+  {path: 'signup', component: SignupComponent},
+  {path: '', component: LoginComponent},
+
+
+  {path: 'doctor/treatments', component: MyTreatmentsComponent}
 
 
 
