@@ -56,7 +56,7 @@ import {EducationComponent} from './profiles/pages/education/education.component
 import {MatMenuModule} from "@angular/material/menu";
 import {MyPatientsComponent} from "./appointments/pages/my-patients/my-patients.component";
 import {DiagnosisComponent} from "./appointments/pages/diagnosis/diagnosis.component";
-import { MyTreatmentsComponent } from './user-type/doctor/pages/my-treatments/my-treatments.component';
+import { MyTreatmentsComponent } from './treatments/pages/my-treatments/my-treatments.component';
 
 
 

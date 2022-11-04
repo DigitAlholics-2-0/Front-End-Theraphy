@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Observable} from "rxjs";
-import {Treatment} from "../../../../treatments/model/treatment";
-import {TreatmentsService} from "../../../../treatments/services/treatments.service";
+import {Treatment} from "../../model/treatment";
+import {TreatmentsService} from "../../services/treatments.service";
 
 
 @Component({
