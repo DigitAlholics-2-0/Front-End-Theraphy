@@ -1,0 +1,33 @@
+<div class="page">
+<div class="sidenav">
+  <app-physiotherapist-sidenav></app-physiotherapist-sidenav>
+</div>
+<div class="contents">
+  <app-header></app-header>
+
+<div>
+
+<h1>Your Treatments</h1>
+
+<button class="btn-new-treatment" mat-raised-button color="primary" [routerLink]="['/new-treatment']">New Treatment</button>
+
+<br><br>
+
+
+  <div class="card-treatments" *ngFor="let treatment of treatments">
+    <mat-card>
+      <mat-card-header>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon>play_circle</mat-icon>
+        </button>
+
+        <span class="example-spacer"></span>
+        <mat-card-title>{{treatment.title}}</mat-card-title>
+        <mat-card-subtitle>{{treatment.description}}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card><br>
+  </div>
+</div>
+
+</div>
+</div>
