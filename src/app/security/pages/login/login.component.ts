@@ -45,7 +45,9 @@ export class LoginComponent implements OnInit {
 
   submitForm(){
     this.usersService.getAll1().subscribe(response=>{
-      const user = response.find((a: any)=> {
+
+
+      const user = response.content.find((a: any)=> {
         this.currentUser = a;
         return a.email === this.loginForm.value.email &&
           a.password === this.loginForm.value.password

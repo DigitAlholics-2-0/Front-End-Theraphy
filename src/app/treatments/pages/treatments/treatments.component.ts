@@ -25,7 +25,7 @@ export class TreatmentsComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.usersService.getById(Number(sessionStorage.getItem("userId"))).subscribe((response:any)=>{
+   this.usersService.getById(Number(sessionStorage.getItem("userId"))).subscribe((response:any)=>{
      this.userType= String(response.type);
     })
 
